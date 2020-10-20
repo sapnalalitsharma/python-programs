@@ -1,0 +1,35 @@
+
+
+if __name__ == "__main__":
+    # Question 1:
+    l = [1, 45, 5, 67, 3, 8, 2, 56, 74, 56, 7, 9, 99, 1, 13, 4]
+    print("\n\nQuestion 1 List: ",l)
+    l.sort()
+    print("Largest Number is ", l[-1], "\nin the list ", l)
+
+    # Question 2:
+    l = [1, 45, 3, 5, 67, 8, 2, 56, 74, 56, 7, 9, 99, 13, 4]
+    print("\n\nQuestion 2 List: ", l)
+    l.sort()
+    largest = l[-1]
+    l.remove(largest)
+    l.sort()
+    print("Second Largest Number is ", l[-1], "\nin the list ", l)
+
+    # Question 3:
+    l1 = [34,23,54,6,845,65]
+    l2 = [65,34,67,2,45,6,14,51,52,16]
+    print("\n\nQuestion 3 List1: ", l1)
+    print("Question 3 List2: ", l2)
+    merged_list = l1 + l2
+    print("Merged List: ", merged_list)
+    merged_list.sort()
+    print("Sorted Merged List: ", merged_list)
+
+    # Question 4:
+    l = [34,23,54,6,845,65]
+    print("\n\nQuestion 4 List : ", l)
+    temp = l[0]
+    l[0] = l[-1]
+    l[-1] = temp
+    print("Swapped elements in the list", l)
